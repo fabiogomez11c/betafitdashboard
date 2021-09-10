@@ -2,11 +2,12 @@ import React from 'react'
 import { 
     BrowserRouter as Router, 
     Switch, 
-    Route,
     Redirect
 } from 'react-router-dom'
 import { LoginScreen } from '../components/auth/LoginScreen'
 import { DashboardScreen } from '../components/dashboard/DashboardScreen'
+import { PrivateRouter } from './PrivateRouter'
+import { PublicRouter } from './PublicRouter'
 
 
 export const AppRouter = () => {
@@ -16,14 +17,17 @@ export const AppRouter = () => {
     return (
         <Router>
             <Switch>
-                <Route
+
+                <PublicRouter 
                     path='/login'
+                    isAuthenticated={isLogged}
                     component={LoginScreen}
                 />
 
-                <Route 
+                <PrivateRouter 
                     exact
-                    path='/'
+                    path='/dashboard'
+                    isAuthenticated={isLogged}
                     component={DashboardScreen}
                 />
 
