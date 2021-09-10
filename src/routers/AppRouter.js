@@ -9,7 +9,6 @@ import { DashboardScreen } from '../components/dashboard/DashboardScreen'
 import { PrivateRouter } from './PrivateRouter'
 import { PublicRouter } from './PublicRouter'
 
-
 export const AppRouter = () => {
 
     const isLogged = false

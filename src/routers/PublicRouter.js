@@ -1,6 +1,5 @@
 import React from 'react'
 import { Redirect, Route } from 'react-router'
-import { LoginScreen } from '../components/auth/LoginScreen'
 
 export const PublicRouter = ({
     component: Component,
