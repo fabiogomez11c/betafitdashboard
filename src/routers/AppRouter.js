@@ -17,7 +17,7 @@ export const AppRouter = () => {
         <Router>
             <Switch>
 
-                <PublicRouter 
+                <PublicRouter
                     path='/login'
                     isAuthenticated={isLogged}
                     component={LoginScreen}
@@ -30,7 +30,7 @@ export const AppRouter = () => {
                     component={DashboardScreen}
                 />
 
-            <Redirect to='/login' />
+                <Redirect to='/login' />
                 
             </Switch>
         </Router>
