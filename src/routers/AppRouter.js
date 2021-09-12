@@ -14,7 +14,6 @@ import { PublicRouter } from './PublicRouter'
 export const AppRouter = () => {
 
     const authSelector = useSelector(selectAuth);
-    console.log(authSelector);
 
     return (
         <Router>
