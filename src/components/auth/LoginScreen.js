@@ -1,10 +1,14 @@
 import React from 'react'
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
+import { login } from '../../reducers/authReducer';
 
 export const LoginScreen = () => {
 
+    const dispatch = useDispatch();
+
     const handleSubmit = (e) => {
         e.preventDefault();
+        dispatch(login());
     }
 
     return (
