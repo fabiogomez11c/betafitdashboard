@@ -10,7 +10,7 @@ import { DashboardScreen } from '../components/dashboard/DashboardScreen'
 import { selectAuth } from '../reducers/authReducer'
 import { PrivateRouter } from './PrivateRouter'
 import { PublicRouter } from './PublicRouter'
-
+//TODO add the routes protections when not authenticated
 export const AppRouter = () => {
 
     const authSelector = useSelector(selectAuth);
