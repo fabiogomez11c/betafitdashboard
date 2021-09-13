@@ -6,14 +6,14 @@ export const DashboardScreen = () => {
 
     const dispatch = useDispatch();
     
-    const handleClick = () => {
+    const handleLogoutClick = () => {
         dispatch(logout());
     }
     
     return (
         <div>
             <h1>DashboardScreen</h1>
-            <button onClick={handleClick}>
+            <button onClick={handleLogoutClick}>
                 Logout
             </button>
         </div>
