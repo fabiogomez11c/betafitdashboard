@@ -1,6 +1,6 @@
 import React from 'react'
 import { Dashboard } from './Dashboard';
-import { Sidebar } from './Sidebar';
+import { Sidebar } from './sidebar/Sidebar';
 
 export const DashboardScreen = () => {
     
