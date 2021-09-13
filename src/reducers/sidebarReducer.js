@@ -9,9 +9,12 @@ export const sidebarSlice = createSlice({
         changeStatus: state => {
             state.isActive = !state.isActive;
         },
+        activate: state => {
+            state.isActive = true
+        }
     }
 });
 
 export const selectSidebar = state => state.sidebar.isActive;
-export const {changeStatus} = sidebarSlice.actions;
+export const {changeStatus, activate} = sidebarSlice.actions;
 export default sidebarSlice.reducer;
