@@ -25,7 +25,9 @@ export const LoginScreen = () => {
                         placeholder='Password'
                         type='password'
                     />
-                    <button>Login</button>
+                    <button>
+                        Login
+                    </button>
                 </form>
             </div>
         </div>
