@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { useDispatch } from "react-redux";
 import { login } from '../../reducers/authReducer';
-import { app } from '../../firebase/config';
+import '../../firebase/config';
 
 export const LoginScreen = () => {
 

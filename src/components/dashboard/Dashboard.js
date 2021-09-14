@@ -2,7 +2,7 @@ import React from 'react'
 import { getAuth, signOut } from "firebase/auth";
 import { useDispatch } from 'react-redux';
 import { logout } from '../../reducers/authReducer';
-import { app } from '../../firebase/config';
+import '../../firebase/config';
 
 export const Dashboard = () => {
 
