@@ -19,11 +19,12 @@ export const LoginScreen = () => {
         const auth = getAuth();
         signInWithEmailAndPassword(auth, userInput, password)
             .then((userCredential) => {
-                console.log(userCredential);
+                // console.log(userCredential);
                 dispatch(login());
             })
             .catch((error) => {
-                console.log(error);
+                alert(error.message);
+                setLoading(false)
             });
     }
 
