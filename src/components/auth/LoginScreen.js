@@ -1,14 +1,36 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { useDispatch } from "react-redux";
 import { login } from '../../reducers/authReducer';
+import { app } from '../../firebase/config';
 
 export const LoginScreen = () => {
 
     const dispatch = useDispatch();
+    const [userInput, setUserInput] = useState('fabio11c@hotmail.com');
+    const [password, setPassword] = useState('fabio1991');
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        dispatch(login());
+        const auth = getAuth();
+        signInWithEmailAndPassword(auth, userInput, password)
+            .then((userCredential) => {
+                // Signed in
+                console.log(userCredential);
+                dispatch(login());
+                // ...
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+    }
+
+    const handleUserChange = (e) => {
+        setUserInput(e.target.value)
+    }
+
+    const handlePasswordChange = (e) => {
+        setPassword(e.target.value)
     }
 
     return (
@@ -20,10 +42,14 @@ export const LoginScreen = () => {
                         placeholder='User'
                         type='text'
                         autoComplete='off'
+                        value={userInput}
+                        onChange={handleUserChange}
                     />
                     <input 
                         placeholder='Password'
                         type='password'
+                        value={password}
+                        onChange={handlePasswordChange}
                     />
                     <button>
                         Login

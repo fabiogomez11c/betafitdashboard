@@ -11,6 +11,8 @@ export const Sidebar = () => {
     const isActive = useSelector(selectSidebar)
 
     useEffect(() => {
+        // hook to handle the unmount of the sidebar,
+        // basically it resets the side bar
         return () => {
             dispatch(activate())
         }
