@@ -9,16 +9,18 @@ export const LoginScreen = () => {
     const dispatch = useDispatch();
     const [userInput, setUserInput] = useState('fabio11c@hotmail.com');
     const [password, setPassword] = useState('fabio1991');
+    const [loading, setLoading] = useState(false)
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        setLoading(true);
+
         const auth = getAuth();
         signInWithEmailAndPassword(auth, userInput, password)
             .then((userCredential) => {
-                // Signed in
                 console.log(userCredential);
                 dispatch(login());
-                // ...
             })
             .catch((error) => {
                 console.log(error);
@@ -51,7 +53,7 @@ export const LoginScreen = () => {
                         value={password}
                         onChange={handlePasswordChange}
                     />
-                    <button>
+                    <button disabled={loading}>
                         Login
                     </button>
                 </form>
