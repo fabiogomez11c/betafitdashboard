@@ -6,8 +6,8 @@ export const authSlice = createSlice({
         value: ''
     },
     reducers: {
-        login: state => {
-            state.value = '123456';
+        login: (state, action) => {
+            state.value = action.payload;
         }, 
         logout: state => {
             state.value = '';

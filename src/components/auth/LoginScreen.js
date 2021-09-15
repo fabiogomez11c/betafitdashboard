@@ -18,22 +18,22 @@ export const LoginScreen = () => {
 
         const auth = getAuth();
         signInWithEmailAndPassword(auth, userInput, password)
-            .then((userCredential) => {
+            .then(({user}) => {
                 // console.log(userCredential);
-                dispatch(login());
+                dispatch(login(user.uid));
             })
             .catch((error) => {
                 alert(error.message);
-                setLoading(false)
+                setLoading(false);
             });
     }
 
     const handleUserChange = (e) => {
-        setUserInput(e.target.value)
+        setUserInput(e.target.value);
     }
 
     const handlePasswordChange = (e) => {
-        setPassword(e.target.value)
+        setPassword(e.target.value);
     }
 
     return (
