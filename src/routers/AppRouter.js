@@ -11,6 +11,7 @@ import { DashboardScreen } from '../components/dashboard/DashboardScreen'
 import { login, logout, selectAuth } from '../reducers/authReducer'
 import { PrivateRouter } from './PrivateRouter'
 import { PublicRouter } from './PublicRouter'
+
 export const AppRouter = () => {
 
     const [checking, setChecking] = useState(true)

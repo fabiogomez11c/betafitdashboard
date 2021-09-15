@@ -8,7 +8,7 @@ export const LoginScreen = () => {
 
     const dispatch = useDispatch();
     const [userInput, setUserInput] = useState('fabio11c@hotmail.com');
-    const [password, setPassword] = useState('fabio1991');
+    const [password, setPassword] = useState('betafit1234');
     const [loading, setLoading] = useState(false)
 
     const handleSubmit = (e) => {
