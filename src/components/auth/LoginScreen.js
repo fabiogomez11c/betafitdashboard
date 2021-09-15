@@ -39,9 +39,13 @@ export const LoginScreen = () => {
     return (
         <div className='login'>
             <div className='section'>
-                <h1>Betafit</h1>
-                <form onSubmit={handleSubmit}>
+                <h1 className='section__title'>Betafit</h1>
+                <form 
+                    onSubmit={handleSubmit}
+                    className='section__form form'
+                >
                     <input 
+                        className='form__item'
                         placeholder='User'
                         type='text'
                         autoComplete='off'
@@ -49,12 +53,16 @@ export const LoginScreen = () => {
                         onChange={handleUserChange}
                     />
                     <input 
+                        className='form__item'
                         placeholder='Password'
                         type='password'
                         value={password}
                         onChange={handlePasswordChange}
                     />
-                    <button disabled={loading}>
+                    <button 
+                        className='form__item'
+                        disabled={loading}
+                    >
                         Login
                     </button>
                 </form>
