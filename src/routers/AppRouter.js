@@ -27,8 +27,8 @@ export const AppRouter = () => {
             dispatch(logout());
         }
         setChecking(false)
-    }, [dispatch, setChecking])
-    });
+        })
+    }, [dispatch, setChecking]);
 
     if (checking) {
         return (
