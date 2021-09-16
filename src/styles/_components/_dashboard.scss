@@ -10,7 +10,9 @@
       transition: 0.5s;
     }
     &__sidebar{
+      position: relative;
       background-color: $sidebar_color;
+      height: 100%;
       width: 200px;
       display: flex;
       flex-direction: column;
@@ -56,6 +58,29 @@
       color: white;
     }
   }
+  span {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 50;
+  }
+  &__logout{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover{
+      width: 32px;
+      height: 32px;
+    }
+    &:active{
+      opacity: 0.5;
+    }
+  }
+
+  // transformations
   &__itemshide{
     transform: translateX(100px);
   }

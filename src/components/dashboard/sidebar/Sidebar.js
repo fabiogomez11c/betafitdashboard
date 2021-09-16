@@ -3,6 +3,7 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { modifyClass } from '../../../helpers/modifyClass'
 import { activate, changeStatus, selectSidebar } from '../../../reducers/sidebarReducer'
+import { Logout } from './Logout'
 import { OptionItem } from './OptionItem'
 import { Profile } from './Profile'
 
@@ -40,12 +41,7 @@ export const Sidebar = () => {
             </div>
             <Profile/>
             <OptionItem/>
-            {/* {
-                !isActive ?
-                <>
-                </>
-                :<></>
-            } */}
+            <Logout/>
         </div>
     )
 }
