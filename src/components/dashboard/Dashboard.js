@@ -20,7 +20,7 @@ export const Dashboard = () => {
     }
 
     return (
-    <div className='dashboard__view'>
+    <div className='dashboard__view view'>
         <h1>DashboardScreen</h1>
         <button onClick={handleLogoutClick}>
             Logout
