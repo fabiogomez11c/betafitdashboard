@@ -1,6 +1,42 @@
 .dashboard{
     display: flex;
-    &__sidebar{
-        transition: 0.5s;
+    height: 100%;
+    &__menuicon{
+      display: flex;
+      justify-content: right;
     }
+}
+
+.sidebar{
+  background-color: rgb(63, 143, 218);
+  &__profile{
+    display: flex;
+    align-items: center;
+    img {
+      width: 30px;
+      height: 30px;
+      border-radius: 30px;
+      background: rgb(155, 203, 248);
+      box-shadow: 0px 3px 5px rgb(29, 29, 29);
+    }
+    p {
+      color: white;
+      font-weight: bold;
+    }
+  }
+  &__item{
+    margin: 10px 5px;
+  }
+  &__optionitem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+      color: white;
+    }
+  }
+}
+
+.option{
+  margin: 8px;
 }

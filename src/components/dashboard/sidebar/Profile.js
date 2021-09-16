@@ -5,16 +5,11 @@ export const Profile = () => {
     return (
     <div className='sidebar__profile'>
         <img 
+            className='sidebar__item'
             alt='profile__picture'
             src={avatar}
-            style={
-                {
-                    width:'30px',
-                    height:'30px'
-                }
-            }
         />
-        <p>Fabio Gomez</p>
+        <p className='sidebar__item'>Fabio Gomez</p>
     </div>
     )
 }

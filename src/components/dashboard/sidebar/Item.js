@@ -3,7 +3,9 @@ import React from 'react'
 export const Item = () => {
     return (
         <>
-            <p>Option A</p>   
+        <div className='option'>
+            <p className='option__text'>Option A</p>   
+        </div>
         </>
     )
 }

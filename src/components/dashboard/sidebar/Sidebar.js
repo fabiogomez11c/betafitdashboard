@@ -23,10 +23,17 @@ export const Sidebar = () => {
     }
 
     return (
-        <div className='dashboard__sidebar sidebar'>
-            <Hamburger onToggle={handleToggle}/>
+        <div 
+            className='dashboard__sidebar sidebar'
+        >
+            <div className='dashboard__menuicon'>
+                <Hamburger 
+                    onToggle={handleToggle}
+                    color="#FFFF"
+                />
+            </div>
             {
-                isActive ?
+                !isActive ?
                 <>
                     <Profile/>
                     <OptionItem/>
