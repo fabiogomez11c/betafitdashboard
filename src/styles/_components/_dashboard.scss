@@ -19,7 +19,7 @@
     }
     &__view{
       background-color: $back_color;
-      flex-basis: 85%;
+      width: 100%;
       transition: 0.5s;
       z-index: 2;
     }
@@ -41,6 +41,7 @@
     p {
       color: white;
       font-weight: bold;
+      white-space: nowrap;
     }
   }
   &__item{
@@ -60,9 +61,6 @@
   }
   &__reducebasis{
     flex-basis: 4%;
-  }
-  &__increasebasis{
-    flex-basis: 96%;
   }
   &__icondisplacement{
     left: -8%;

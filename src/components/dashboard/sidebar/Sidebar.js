@@ -25,7 +25,6 @@ export const Sidebar = () => {
         modifyClass(isActive, '.sidebar__optionitem', 'sidebar__itemshide');
         modifyClass(isActive, '.sidebar__profile', 'sidebar__itemshide');
         modifyClass(isActive, '.dashboard__sidebar', 'sidebar__reducebasis');
-        modifyClass(isActive, '.dashboard__view', 'sidebar__increasebasis');
         modifyClass(isActive, '.dashboard__menuicon', 'sidebar__icondisplacement');
     }
 

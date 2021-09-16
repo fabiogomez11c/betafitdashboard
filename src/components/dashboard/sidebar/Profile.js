@@ -9,7 +9,7 @@ export const Profile = () => {
             alt='profile__picture'
             src={avatar}
         />
-        <p className='sidebar__item'>Fabio Gomez</p>
+        <p className='sidebar__item'> Fabio Gomez </p>
     </div>
     )
 }
