@@ -11,7 +11,7 @@
     }
     &__sidebar{
       background-color: $sidebar_color;
-      flex-basis: 15%;
+      width: 200px;
       display: flex;
       flex-direction: column;
       transition: 0.5s;
@@ -60,10 +60,7 @@
     transform: translateX(100px);
   }
   &__reducebasis{
-    flex-basis: 4%;
-  }
-  &__icondisplacement{
-    left: -8%;
+    width: 50px;
   }
 }
 
