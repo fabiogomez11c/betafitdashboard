@@ -4,8 +4,10 @@ import { Item } from './Item'
 export const OptionItem = () => {
     return (
     <div className='sidebar__optionitem'>
-        <Item key='uno'/>
-        <Item key='dos'/>
+        <Item 
+            key='uno'
+            itemLabel='gross'
+        />
     </div>
     )
 }
