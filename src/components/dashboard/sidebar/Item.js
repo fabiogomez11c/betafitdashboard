@@ -1,14 +1,17 @@
 import React from 'react'
-import { Link, useRouteMatch } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export const Item = ({itemLabel}) => {
-    const {url} = useRouteMatch();
-    const pathString = `${url}/${itemLabel}`
-    console.log(pathString)
     return (
         <>
         <div className='option'>
-            <Link to='/dashboard/gross'>{itemLabel}</Link>
+            {/* TODO change to url param */}
+            <Link 
+                className='option__link'
+                to='/dashboard/gross'
+            >
+                {itemLabel}
+            </Link>
         </div>
         </>
     )
