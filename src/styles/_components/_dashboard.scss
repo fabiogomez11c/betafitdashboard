@@ -91,6 +91,28 @@
 
 .option{
   margin: 8px;
+  background: $card_color;
+  width: 90px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid white;
+  transition: 0.25s;
+  &__link{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    transition: 0.5s;
+  }
+  &:hover {
+    background: white;
+  }
+}
+
+.option:hover .option__link{
+  color: $card_color;
 }
 
 .view {
@@ -107,15 +129,18 @@
     h1 {
       font-size: 3rem;
       color: white;
-      text-shadow: 0px 3px 3px gray;
     }
   }
 }
 
 .board{
   width: 500px;
-  height: 500px;
+  height: 400px;
   &__chart{
     height: 100%;
+    background: $card_color;
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: 0px 4px 4px black;
   }
 }

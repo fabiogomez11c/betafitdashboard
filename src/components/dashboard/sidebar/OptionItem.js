@@ -5,8 +5,8 @@ export const OptionItem = () => {
     return (
     <div className='sidebar__optionitem'>
         <Item 
-            key='uno'
-            itemLabel='gross'
+            key='Gross'
+            itemLabel='Gross'
         />
     </div>
     )
