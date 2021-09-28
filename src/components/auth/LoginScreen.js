@@ -45,7 +45,7 @@ export const LoginScreen = () => {
                     className='section__form form'
                 >
                     <input 
-                        className='form__item'
+                        className='form__item input'
                         placeholder='User'
                         type='text'
                         autoComplete='off'
@@ -53,14 +53,15 @@ export const LoginScreen = () => {
                         onChange={handleUserChange}
                     />
                     <input 
-                        className='form__item'
+                        className='form__item input'
                         placeholder='Password'
                         type='password'
+                        autoComplete='off'
                         value={password}
                         onChange={handlePasswordChange}
                     />
                     <button 
-                        className='form__item'
+                        className='form__item button'
                         disabled={loading}
                     >
                         Login

@@ -1,14 +1,26 @@
+@import '../_base/variables';
+
 .login {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: $back_color;
 }
 
 .section{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: $card_color;
+    width: 300px;
+    padding: 35px 0px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px black;
+    &__title{
+        color: white;
+        margin: 30px 0px;
+    }
 }
 
 .form{
@@ -16,7 +28,42 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 90%;
     &__item {
         margin: 10px;
+    }
+}
+
+.input{
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px black;
+    outline: none;
+    border: none;
+    padding: 5px;
+    transition: 0.5s;
+    &:hover{
+        width: 260px;
+    }
+    &:focus{
+        width: 260px;
+    }
+}
+
+.button{
+    width: 80px;
+    height: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    background: $sidebar_color;
+    color: white;
+    transition: 0.25s;
+    &:hover{
+        color: $sidebar_color;
+        background: white;
+    }
+    &:active{
+        opacity: 0.5;
     }
 }
