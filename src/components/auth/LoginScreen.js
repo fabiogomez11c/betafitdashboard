@@ -19,7 +19,6 @@ export const LoginScreen = () => {
         const auth = getAuth();
         signInWithEmailAndPassword(auth, userInput, password)
             .then(({user}) => {
-                // console.log(userCredential);
                 dispatch(login(user.uid));
             })
             .catch((error) => {

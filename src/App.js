@@ -4,6 +4,7 @@ import { Provider } from "react-redux";
 
 import { store } from "./reducers/store";
 
+// TODO remove all the absolute dimensions and use rem instead of px.
 
 function App() {
   return (
@@ -14,3 +15,4 @@ function App() {
 }
 
 export default App;
+
